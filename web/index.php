@@ -7,13 +7,16 @@
 </head>
 <body>
     <form action="post.php" method="post" enctype="multipart/form-data">
+        
         <label for="name">Имя пользователя:</label>
-        <input type="text" name="name" id="name" required>
+        <input type="text" name="name" id="name" placeholder="Логин или email" required>
         </br>
-        <label for="pass">Пароль:</label>
-        <input type="pass" name="pass" id="pass" required>
+        <label for="password">Пароль:</label>
+        <input type="password" name="password" id="password"  placeholder="Пароль" required>
         </br>
-        <input type="submit" value="Зарегистрироваться">
+        <input type="submit" name="login" value="Войти">
+        </br>
+        <input type="submit" name="register" value="Зарегистрироваться">
     </form>
 </body>
 </html>
